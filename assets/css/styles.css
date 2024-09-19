@@ -173,9 +173,14 @@ body {
   padding: 50px 20px;
 }
 
+/* <div class="NewProducts" style="color: black; font-size: ; font-family: Inter; font-weight: 600; line-height: 44px; word-wrap: break-word">NEW PRODUCTS</div>  */
+
 h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 44px;
+  word-wrap: break-word;
 }
 
 p {
