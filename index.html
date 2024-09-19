@@ -5,6 +5,57 @@
     <link rel="stylesheet" href="assets/css/globals.css" />
     <link rel="stylesheet" href="assets/css/styleguide.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" />
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: "Inter", Helvetica;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .nested-dropdown {
+        position: relative;
+      }
+
+      .nested-dropdown-content {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .nested-dropdown:hover .nested-dropdown-content {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <div class="header-navigation">
@@ -23,11 +74,22 @@
             <div class="HOME">SALE</div>
           </li>
           <li href="#" class="item-nav">
-            <div class="HOME">BUNDLE &amp; SAVE</div>
+            <div class="HOME">BUNDLE & SAVE</div>
           </li>
-          <li class="item-nav">
-            <div class="HOME">SHOP BY CATEGORY</div> <i class="ri-arrow-down-s-line"></i>
-            
+          <li class="item-nav dropdown">
+            <div class="HOME">SHOP BY CATEGORY <i class="bi bi-chevron-down"></i></div>
+            <div class="dropdown-content">
+              <div class="nested-dropdown">
+                <a href="#">ITEM 01 <i class="bi bi-chevron-right"></i></a>
+                <div class="nested-dropdown-content">
+                  <a href="#">ITEM 05</a>
+                  <a href="#">ITEM 06</a>
+                </div>
+              </div>
+              <a href="#">ITEM 02</a>
+              <a href="#">ITEM 03</a>
+              <a href="#">ITEM 04</a>
+            </div>
           </li>
           <li class="item-nav">
             <div class="HOME">SUPPORT</div>
